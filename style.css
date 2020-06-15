@@ -84,7 +84,7 @@ img {
 }
 
 
-.codesStyle{
+.codeStyle{
     background-color: rgb(250, 250, 250);
     padding: 30px;
     padding-bottom: 14px;
@@ -98,7 +98,8 @@ img {
 .codeStyleLesser {
     background-color: rgb(250, 250, 250);
     padding: 5px;
-    margin-left: 8px;
+    margin-left: 3px;
+    margin-right: 3px;
     border-radius: 4px;
     color: royalblue;
 }
@@ -135,3 +136,27 @@ img {
     overflow-x: hidden;
     padding-top: 60px;
   }
+
+.code {
+    color: royalblue !important;
+}
+
+.lightMargin {
+    margin-bottom: 10px;
+}
+
+.lightMarginTop {
+    margin-top: 35px;
+}
+
+.usualTopMarginForHeadings {
+    margin-top: 200px;
+}
+/* Doesn't work on other browsers than Safari
+  .acrylic {
+      -webkit-backdrop-filter: 
+        blur(8px)
+        saturate(180%);
+      background-color:rgba(30, 30, 30, .8);
+  }
+  */

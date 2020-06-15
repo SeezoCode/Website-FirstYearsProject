@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>JavaScript - Best Programming Languages</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+    <script>
+        function disableExecute(obj, str, but) {
+            obj.disabled = true;
+            document.getElementById(but).disabled = false;
+            return str;
+        }
+
+        function disableRestart(obj, but) {
+            obj.disabled = true;
+            document.getElementById(but).disabled = false;
+            return "&nbsp"
+        }
+
+
+
+        function MultiplyFunction() {
+            let inputs = document.getElementById("InputMultiplyFunction").value;
+            document.getElementById("2-3-but2").disabled = false;
+
+            function multiply(num1, num2) {
+                let result = num1 * num2;
+                document.getElementById("2-3-output").innerHTML = result;
+            }
+            console.log(inputs)
+            try {
+                eval(inputs)
+            } catch (error) {
+                document.getElementById("2-3-output").innerHTML = error;
+            }
+        }
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="400">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark sticky-top navbar-collapse-sm">
+        <ul class="navbar-nav container">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="python.html">Python<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link font-weight-bold" href="#">JavaScript I<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">JavaScript II<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">JavaScript III<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Sources<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <nav id="navbar-example3" class="navbar navbar-light bg-light active responsive oFlowLeftNav sidenav"
+        style="position: fixed;">
+        <nav class="nav nav-pills flex-column active">
+            <a class="nav-link" href="#item-0">JS Introduction</a>
+            <a class="nav-link" href="#item-1">JS Quick Start</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-1">Hello World Example</a>
+
+            <a class="nav-link" href="#item-2">Language Basics</a>
+            <a class="nav-link ml-3 my-1" href="#item-2-1">Variables</a>
+            <a class="nav-link ml-3 my-1" href="#item-2-2">Comments</a>
+            <a class="nav-link ml-3 my-1" href="#item-2-3">Functions</a>
+
+            <a class="nav-link" href="#item-3">Objects</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-1">Object Definition</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-2">Accessing Object Properties</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-3">Object Methods</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-4">Accessing Object Methods</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-5">The this Keyword</a>
+
+        </nav>
+    </nav>
+
+
+
+
+
+
+
+    <div class="jumbotron jumbotron-fluid ">
+        <div class="container containerControl" style="text-align: center;">
+            <h1 class="display-3">JavaScript</h1>
+            <p class="lead" style="font-size: 1.7em;">High-level, often just-in-time compiled, and multi-paradigm
+                programming language.</p>
+            <hr class="my-2">
+            <p style="font-size: large;"><img src="me.png" alt="me" style="width: 50px;" class="rounded-circle"> Filip
+                Hostinský</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#item-0" role="button" style="width: 200px">Start Here</a>
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <div class="container containerControl">
+
+
+        <div class="" style="padding-bottom: 105px; margin-top: 40px;" id="item-0">
+            <div class="row">
+                <div class="col-sm">
+                    <p>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.
+                        JavaScript enables interactive web pages and is an essential part of web applications. The vast
+                        majority of websites use it for client-side page behavior, and all major web browsers have a
+                        dedicated JavaScript engine to execute it.</p>
+                </div>
+                <div class="col-sm">
+                    <p style="padding-left: 20px;">As a multi-paradigm language, JavaScript supports event-driven,
+                        functional, and imperative programming styles. It has application programming interfaces (APIs)
+                        for working with text, dates, regular expressions, standard data structures, and the Document
+                        Object Model (DOM). However, the language itself does not include any input/output (I/O), such
+                        as networking, storage, or graphics facilities, as the host environment (usually a web browser)
+                        provides those APIs.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <nav id="navbar-example3" class="navbar navbar-light bg-light active responsiveNav someMargin oFlow">
+
+            <nav style="padding-left: 4%;">
+                <h4>Table of content</h4>
+                <a class="nav-link" href="#item-0">JavaScript Introduction</a>
+                <a class="nav-link" href="#item-1">JavaScript Quick Start</a>
+                <a class="nav-link" href="#item-2">JavaScript Language Basics</a>
+                <a class="nav-link" href="#item-3">JavaScript Objects</a>
+            </nav>
+        </nav>
+
+
+
+
+        <h1 class="display-5" id="item-1">JavaScript Quick Start</h1>
+        <hr style="margin-bottom: 80px;">
+
+        <h3 id="item-1-1">A Hello World example</h3>
+        <p>JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites
+            will enter a new dimension of power and creativity.</p>
+        <p>To begin, let's examine how to add JavaScript to your page for creating a Hello world! example.</p>
+        <p>The <code class=codeStyleLesser>Console</code> method <code class=codeStyleLesser>log()</code> outputs a
+            message to the web console. The message may be a single string (with optional substitution values), or it
+            may be any one or more JavaScript objects.</p>
+
+        <div class="codeStyle lightMargin">
+            <p>console.log("Hello World");</p>
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-light lightMargin" id="1-1-but1"
+                onclick='document.getElementById("1-1").innerHTML = disableExecute(this, "Hello World", "1-1-but2")'>Execute
+                program</button>
+            <button type="button" class="btn btn-light lightMargin" id="1-1-but2"
+                onclick='document.getElementById("1-1").innerHTML = "&nbsp", disableRestart(this, "1-1-but1")'>Reset
+                program</button>
+        </div>
+
+        <div class="codeStyle">
+            <p id="1-1">&nbsp</p>
+        </div>
+
+
+        <h1 class="display-5" id="item-2" style="margin-top: 180px;">Language Basics Crash Course</h1>
+        <hr style="margin-bottom: 25px;">
+
+        <p>To give you a better understanding of how JavaScript works, let's explain some of the core features of the
+            language. It's worth noting that these features are common to all programming languages. If you master these
+            fundamentals, you have a head start on coding in other languages too!</p>
+
+        <h3 id="item-2-1" class="lightMarginTop">Variables</h3>
+        <p>Variables are containers that store values. You start by declaring a variable with the var (less recommended)
+            or the let keyword, followed by the name you give to the variable:</p>
+
+        <div class="codeStyle" style="margin-bottom: 30px;">
+            <p>let myVariable = {};</p>
+        </div>
+
+        <table class="table table-hover someMargin">
+            <thead>
+                <tr>
+                    <th>Variable</th>
+                    <th>Explanation</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">String</td>
+                    <td>This is a sequence of text known as a string. To signify that the value is a string, enclose it
+                        in single quote marks.</td>
+                    <td><code class="codeStyleLesser">let myVariable = 'Bob';</code></td>
+                </tr>
+                <tr>
+                    <td scope="row">Number</td>
+                    <td>This is a number. Numbers don't have quotes around them.</td>
+                    <td><code class="codeStyleLesser">let myVariable = 10;</code></td>
+                </tr>
+                <tr>
+                    <td scope="row">Boolean</td>
+                    <td>This is a True/False value. The words true and false are special keywords that don't need quote
+                        marks.</td>
+                    <td><code class="codeStyleLesser">let myVariable = true;</code></td>
+                </tr>
+                <tr>
+                    <td scope="row">Array</td>
+                    <td>This is a structure that allows you to store multiple values in a single reference.</td>
+                    <td><code class="codeStyleLesser">let myVariable = [1,'Bob','Steve',10];</code></td>
+                </tr>
+                <tr>
+                    <td scope="row">Object</td>
+                    <td>This can be anything. Everything in JavaScript is an object, and can be stored in a variable.
+                        Keep this in mind as you learn.</td>
+                    <td><code class="codeStyleLesser">let myVariable = document.querySelector('h1');</code></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
+        <h3 id="item-2-2" class="lightMarginTop">Comments</h3>
+        <p>Comments are snippets of text that can be added along with code. The browser ignores text marked as comments.
+            You can write comments in JavaScript just as you can in CSS:</p>
+
+        <div class="codeStyle" style="margin-bottom: 30px;">
+            <p>/*<br>
+                Everything in between is a comment. <br>
+                */</p>
+        </div>
+
+        <p>If your comment contains no line breaks, it's an option to put it behind two slashes like this:</p>
+
+        <div class="codeStyle" style="margin-bottom: 30px;">
+            <p>// This is a comment</p>
+        </div>
+
+
+
+
+        <h3 id="item-2-3" class="lightMarginTop">Functions</h3>
+        <p>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code
+            as a function that executes when you call the function name in your code. This is a good alternative to
+            repeatly writing the same code. You have already seen some uses of functions previously. For example:</p>
+
+        <div class="codeStyle lightMargin" id="2-3-function">
+            <p>function multiply(num1,num2) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let result = num1 * num2;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return result;<br>}
+            </p>
+        </div>
+
+        <div class="form-group codeStyle lightMargin">
+            <input class="form-control" id="InputMultiplyFunction" placeholder="Try: multiply(2, 7)">
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-light lightMargin" id="2-3-but1" onclick='MultiplyFunction()'>Execute
+                program</button>
+            <button type="button" class="btn btn-light lightMargin" id="2-3-but2"
+                onclick='document.getElementById("2-3-output").innerHTML = "&nbsp", disableRestart(this)'>Reset
+                program</button>
+        </div>
+
+
+        <div class="codeStyle">
+            <p id="2-3-output">&nbsp;</p>
+        </div>
+
+
+
+
+
+
+
+
+
+        <h1 class="display-5 usualTopMarginForHeadings" id="item-3">JavaScript Objects</h1>
+        <hr style="margin-bottom: 80px;">
+
+        <h3 id="item-3-1">Object Definition</h3>
+        <p>You define (and create) a JavaScript object with an object literal:</p>
+
+        <div class="codeStyle someMargin">
+            <p>let person = {<br>&nbsp;&nbsp;&nbsp;&nbsp;firstName:"John", <br>&nbsp;&nbsp;&nbsp;&nbsp;lastName:"Doe",
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;age:50, <br>&nbsp;&nbsp;&nbsp;&nbsp;eyeColor:"blue"<br>};</p>
+        </div>
+
+
+
+        <h3 id="item-3-2">Accessing Object Properties</h3>
+        <p>You can access object properties in two ways:</p>
+
+        <div class="codeStyle lightMargin">
+            <p><i>objectName.propertyName</i></p>
+        </div>
+        <p>or</p>
+        <div class="codeStyle someMargin">
+            <p><i>objectName["propertyName"]</i></p>
+        </div>
+
+
+
+
+
+        <h3 id="item-3-3">Object Methods</h3>
+        <p>Objects can also have methods. Methods are actions that can be performed on objects. </p>
+
+        <p>Methods are stored in properties as function definitions.</p>
+
+        <div class="codeStyle someMargin">
+            <p>var person = {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;firstName: "John",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;lastName : "Doe",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;fullName : function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return this.firstName + " " + this.lastName;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                };</p>
+        </div>
+
+
+
+        <h3 id="item-3-4">Accessing Object Methods</h3>
+        <p>You access an object method with the following syntax:</p>
+
+        <div class="codeStyle lightMargin">
+            <p>//<i>objectName.methodName()</i></p>
+            <p>person.fullName()</p>
+        </div>
+
+
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-light lightMargin" id="3-4-but1"
+                onclick='document.getElementById("3-4").innerHTML = disableExecute(this, "John Doe", "3-4-but2")'>Execute
+                program</button>
+            <button type="button" class="btn btn-light lightMargin" id="3-4-but2"
+                onclick='document.getElementById("3-4").innerHTML = "&nbsp", disableRestart(this, "3-4-but1")'>Reset
+                program</button>
+        </div>
+
+        <div class="codeStyle">
+            <p id="3-4">&nbsp</p>
+        </div>
+
+
+        <h3 id="item-3-5">The <code class="codeStyleLesser">this</code> Keyword</h3>
+        <p>In a function definition, <code class="codeStyleLesser">this</code> refers to the "owner" of the function.</p>
+
+        <p>In the example above, <code class="codeStyleLesser">this</code> is the person object that "owns" the <code class="codeStyleLesser">fullName</code> function. In other words,
+            <code class="codeStyleLesser">this.firstName</code> means the <code class="codeStyleLesser">firstName</code> property of this object.</p>
+
+        <p>Read more about the <code class="codeStyleLesser">this</code> keyword at <a href="https://www.w3schools.com/js/js_this.asp">JS this Keyword</a> .</p>
+
+        <div class="codeStyle someMargin">
+            <p>var person = {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;firstName: "John",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;lastName : "Doe",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;fullName : function() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return this.firstName + " " + this.lastName;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                };</p>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    <p  style="margin-bottom: 200px"></p>
+
+    <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
+        <div class="container containerControl">
+            <p>Sources:</p>
+            <a href="https://hackr.io/blog/best-programming-languages-to-learn-2020-jobs-future">hackr.io</a> <br>
+            <a href="https://www.w3schools.com">W3schools</a><br>
+            <a href="https://en.wikipedia.org/wiki/JavaScript">Wikipedia</a><br>
+            <a href="https://developer.mozilla.org/en-US/">developer.mozzila</a><br>
+
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+</body>
+
+</html>
