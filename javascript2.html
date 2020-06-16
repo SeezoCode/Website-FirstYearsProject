@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>JavaScript - Best Programming Languages</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+    <script>
+        function disableExecute(obj, str, but) {
+            obj.disabled = true;
+            document.getElementById(but).disabled = false;
+            return str;
+        }
+
+        function disableRestart(obj, but) {
+            obj.disabled = true;
+            document.getElementById(but).disabled = false;
+            return "&nbsp"
+        }
+
+
+
+        function MultiplyFunction() {
+            let inputs = document.getElementById("inputGetPersonFunc").value;
+            document.getElementById("1-3-but2").disabled = false;
+
+            let person = ["John", "Doe", 46];
+
+            console.log(inputs)
+            try {
+
+                document.getElementById("1-3-output").innerHTML = eval(inputs);
+            } catch (error) {
+                document.getElementById("1-3-output").innerHTML = error;
+            }
+        }
+    </script>
+
+
+    <link rel="stylesheet" href="highlight/styles/atom-one-light.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="400">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark sticky-top navbar-collapse-sm">
+        <ul class="navbar-nav container">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="python.html">Python<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="javascript.html">JavaScript I<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link font-weight-bold" href="javascript2.html">JavaScript II<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="javascript3.html">JavaScript III<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Sources<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <nav id="navbar-example3" class="navbar navbar-light bg-light active responsive oFlowLeftNav sidenav"
+        style="position: fixed;">
+        <nav class="nav nav-pills flex-column active">
+            <a class="nav-link" href="#item-1">JavaScript Arrays</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-1">What is an Array?</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-2">Creating an Array</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-3">Arrays are Objects</a>
+
+
+            <a class="nav-link" href="#item-2">Properties and Methods</a>
+            <a class="nav-link ml-3 my-1" href="#item-2-1">Adding Array Elements</a>
+
+            <a class="nav-link" href="#item-3">How to Recognize an Array</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-1">Solution 1</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-2">Solution 2</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-3">Solution 3</a>
+
+            <a class="nav-link" href="#item-4">Strict Mode</a>
+
+        </nav>
+    </nav>
+
+
+
+
+
+
+
+    <div class="jumbotron jumbotron-fluid ">
+        <div class="container containerControl" style="text-align: center;">
+            <h1 class="display-3">JavaScript</h1>
+            <p class="lead" style="font-size: 1.7em;">High-level, often just-in-time compiled, and multi-paradigm
+                programming language.</p>
+            <hr class="my-2">
+            <p style="font-size: large;"><img src="me.png" alt="me" style="width: 50px;" class="rounded-circle"> Filip
+                Hostinský</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#item-0" role="button" style="width: 200px">Start Here</a>
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <div class="container containerControl">
+
+
+        <nav id="navbar-example3" class="navbar navbar-light bg-light active responsiveNav someMargin oFlow">
+
+            <nav style="padding-left: 4%;">
+                <h4>Table of content</h4>
+                <a class="nav-link" href="#item-0">JavaScript Introduction</a>
+                <a class="nav-link" href="#item-1">JavaScript Quick Start</a>
+                <a class="nav-link" href="#item-2">JavaScript Language Basics</a>
+                <a class="nav-link" href="#item-3">JavaScript Objects</a>
+            </nav>
+        </nav>
+
+
+        <br style="underHeadlines">
+        <br style="underHeadlines">
+
+        <h1 class="display-5" id="item-1">JavaScript Arrays</h1>
+        <hr style="margin-bottom: 20px;">
+        <p>JavaScript arrays are used to store multiple values in a single variable.</p>
+        <div class="codeStyle">
+            <pre><code class="js">let cars = ["Saab", "Volvo", "BMW"];</code></pre>
+        </div>
+        <br class="underHeadlines">
+
+        <h3 id="item-1-1">What is an Array?</h3>
+        <p>An array is a special variable, which can hold more than one value at a time.</p>
+        <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could
+            look like this:</p>
+        <div class="codeStyle lightMargin">
+            <pre><code class="js">let car1 = "Saab";
+let car2 = "Volvo";
+let car3 = "BMW";</code></pre>
+        </div>
+
+        <p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars,
+            but 300?</p>
+        <p>The solution is an array!</p>
+        <p class="someMargin">An array can hold many values under a single name, and you can access the values by
+            referring to an index number.</p>
+
+
+        <h3 id="item-1-2">Creating an Array</h3>
+        <br class="underHeadlines">
+        <p>Using an array literal is the easiest way to create a JavaScript Array. Syntax:</p>
+        <div class="codeStyle">
+            <pre><code class="js">let array_name = [item1, item2, ...];  </code></pre>
+        </div>
+        <br class="underHeadlines">
+
+
+
+
+
+        <h3 id="item-1-3">Arrays are Objects</h3>
+        <br class="underHeadlines">
+        <p>Arrays are a special type of objects. The <code class="codeStyleLesser">typeof</code> operator in JavaScript
+            returns "object" for arrays. But, JavaScript arrays are best described as arrays.</p>
+        <p>Arrays use numbers to access its "elements". In this example, <code class="codeStyleLesser">person[0]</code>
+            returns John:</p>
+        <div class="codeStyle lightMargin" id="2-3-function">
+            <pre><code>let person = ["John", "Doe", 46];</code></pre>
+        </div>
+
+        <div class="form-group codeStyle lightMargin">
+            <input class="form-control" id="inputGetPersonFunc" placeholder="Try: person[0] or typeof(person)">
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-light lightMargin" id="1-3-but1" onclick='MultiplyFunction()'>Execute
+                program</button>
+            <button type="button" class="btn btn-light lightMargin" id="1-3-but2"
+                onclick='document.getElementById("1-3-output").innerHTML = "&nbsp", disableRestart(this, "1-3-button")'>Reset
+                program</button>
+        </div>
+
+
+        <div class="codeStyle">
+            <p id="1-3-output">&nbsp;</p>
+        </div>
+
+
+
+
+
+
+
+        <h1 class="display-5 usualTopMarginForHeadings" id="item-2">Array Properties and Methods</h1>
+        <hr class="underHeadlines">
+        <p>The real strength of JavaScript arrays are the built-in array properties and methods:</p>
+        <div class="codeStyle lightMargin">
+            <pre><code>let x = cars.length;   // The length property returns the number of elements
+let y = cars.sort();   // The sort() method sorts arrays</code></pre>
+        </div>
+
+        <p class="lightMarginTop">There is a built-in array method, <code class="codeStyleLesser">forEach</code>, that
+            provides something like a for/of loop as a higher-order
+            function.</p>
+        <div class="codeStyle lightMargin" id="1-4-function">
+            <pre><code>["A", "B", "C"].forEach(l => console.log(l));</code></pre>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-light lightMargin" id="1-4-but1"
+                onclick='document.getElementById("1-4").innerHTML = disableExecute(this, "A<br> B<br> C", "1-4-but2")'>Execute
+                program</button>
+            <button type="button" class="btn btn-light lightMargin" id="1-4-but2"
+                onclick='document.getElementById("1-4").innerHTML = "&nbsp", disableRestart(this, "1-4-but1")'>Reset
+                program</button>
+        </div>
+
+        <div class="codeStyle">
+            <p id="1-4">&nbsp; <br>&nbsp; <br>&nbsp; </p>
+        </div>
+
+
+        <h3 id="item-2-1">Adding Array Elements</h3>
+        <br class="underHeadlines">
+        <p>The easiest way to add a new element to an array is using the <code class="codeStyleLesser">push</code>
+            method:</p>
+        <div class="codeStyle lightMargin">
+            <pre><code>let fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Lemon");    // adds a new element (Lemon) to fruits</code></pre>
+        </div>
+        <p class="lightMarginTop">New element can also be added to an array using the <code
+                class="codeStyleLesser">length</code> property:</p>
+        <div class="codeStyle lightMargin">
+            <pre><code>let fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Lemon";    // adds a new element (Lemon) to fruits</code></pre>
+        </div>
+        <p class="lightMarginTop"><b>Warning!</b> Adding elements with high indexes can create undefined "holes" in an
+            array:</p>
+        <div class="codeStyle lightMargin">
+            <pre><code>let fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[6] = "Lemon";    // adds a new element (Lemon) to fruits</code></pre>
+        </div>
+
+
+
+
+
+        <h1 class="display-5 usualTopMarginForHeadings" id="item-3">How to Recognize an Array</h1>
+        <hr class="underHeadlines">
+
+        <p>A common question is: How do I know if a variable is an array? The problem is that the JavaScript operator
+            <code class="codeStyleLesser">typeof</code> returns <code class="codeStyleLesser">object</code>:</p>
+        <div class="codeStyle someMargin">
+            <pre><code>let fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+typeof fruits;    // returns object</code></pre>
+            <p>The typeof operator returns object because a JavaScript array is an object.</p>
+        </div>
+
+
+        <h3 id="item-3-1">Solution 1:</h3>
+        <br class="underHeadlines">
+        <p>TTo solve this problem ECMAScript 5 defines a new method <code class="codeStyleLesser">Array.isArray()</code>
+        </p>
+        <div class="codeStyle lightMargin">
+            <pre><code>Array.isArray(fruits);   // returns true</code></pre>
+        </div>
+        <p class="someMargin">The problem with this solution is that ECMAScript 5 is <b>not</b> supported in older
+            browsers.</p>
+
+
+
+        <h3 id="item-3-2">Solution 2:</h3>
+        <br class="underHeadlines">
+        <p>To solve this problem you can create your own <code class="codeStyleLesser">isArray()</code> function:</p>
+        <div class="codeStyle lightMargin">
+            <pre><code>function isArray(x) {
+                return x.constructor.toString().indexOf("Array") > -1;
+              }</code></pre>
+        </div>
+        <p class="someMargin">The function above always returns true if the argument is an array. Or more precisely: it
+            returns true if the object prototype contains the word "Array".</p>
+
+
+
+
+        <h3 id="item-3-3">Solution 3:</h3>
+        <br class="underHeadlines">
+        <p>The binary <code class="codeStyleLesser">instanceof</code> operator returns true if an object is created by a
+            given constructor:</p>
+        <div class="codeStyle lightMargin">
+            <pre><code>var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+fruits instanceof Array;   // returns true</code></pre>
+        </div>
+        <p class="someMargin">The function above always returns true if the argument is an array. Or more precisely: it
+            returns true if the object prototype contains the word "Array".</p>
+
+
+
+
+
+
+
+        <h1 class="display-5 usualTopMarginForHeadings" id="item-4">Strict Mode</h1>
+        <hr class="underHeadlines">
+
+        <p>JavaScript can be made a little stricter by enabling strict mode. This is done by putting the string "use
+            strict" at the top of a file or a function body. Here’s an example:</p>
+        <div class="codeStyle lightMargin">
+            <pre><code>function canYouSpotTheProblem() {
+    "use strict";
+    for (counter = 0; counter < 10; counter++) {
+          console.log("Happy happy");
+    }
+}
+
+canYouSpotTheProblem();
+// → ReferenceError: counter is not defined”</code></pre>
+        </div>
+
+        <p>Normally, when you forget to put let in front of your binding, as with counter in the example, JavaScript
+            quietly creates a global binding and uses that. In strict mode, an error is reported instead.</p>
+
+
+
+            <p style="margin-bottom: 160px"></p>
+
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="javascript.html" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="javascript.html">1</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="javascript3.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="javascript3.html">Next</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+    </div>
+    <p style="margin-bottom: 40px"></p>
+
+    <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
+        <div class="container containerControl">
+            <p>Sources:</p>
+            <a href="https://hackr.io/blog/best-programming-languages-to-learn-2020-jobs-future">hackr.io</a> <br>
+            <a href="https://www.w3schools.com">W3schools</a><br>
+            <a href="https://en.wikipedia.org/wiki/JavaScript">Wikipedia</a><br>
+            <a href="https://developer.mozilla.org/en-US/">developer.mozzila</a><br>
+            <a href="https://eloquentjavascript.net/index.html">Eloquent Javascript (book)</a><br>
+
+        </div>
+    </div>
+</body>

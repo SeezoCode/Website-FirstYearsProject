@@ -104,9 +104,6 @@ img {
     color: royalblue;
 }
 
-.someMargin {
-    margin-bottom: 80px;
-}
 
 .oFlow{
     width: 100%;
@@ -149,9 +146,24 @@ img {
     margin-top: 35px;
 }
 
+.someMargin {
+    margin-bottom: 80px;
+}
+
 .usualTopMarginForHeadings {
     margin-top: 200px;
 }
+
+
+.underHeadlines {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
 /* Doesn't work on other browsers than Safari
   .acrylic {
       -webkit-backdrop-filter: 
