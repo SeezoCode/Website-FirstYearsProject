@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta name="keywords" content="JavaScript, tutorial, free, interactive">
+    <meta name="description" content="JavaScript web tutorial">
+    <meta name="author" content="Filip Hostinský">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,7 +30,7 @@
         function disableRestart(obj, but) {
             obj.disabled = true;
             document.getElementById(but).disabled = false;
-            return "&nbsp"
+            return "&nbsp;"
         }
 
 
@@ -50,7 +54,7 @@
 
 
     <link rel="stylesheet" href="highlight/styles/atom-one-light.css">
-    <script src="highlight/highlight.pack.js"></script>
+    <script src="highlight/highlight.pack.js"></script> 
     <script>hljs.initHighlightingOnLoad();</script>
 
 </head>
@@ -83,10 +87,10 @@
                 <a class="nav-link" href="javascript2.html">JavaScript II<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="javascript2.html">JavaScript III<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="javascript3.html">JavaScript III<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Sources<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">More<span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </nav>
@@ -127,13 +131,12 @@
             <p class="lead" style="font-size: 1.7em;">High-level, often just-in-time compiled, and multi-paradigm
                 programming language.</p>
             <hr class="my-2">
-            <p style="font-size: large;"><img src="me.png" alt="me" style="width: 50px;" class="rounded-circle"> Filip
+            <p style="font-size: large;"><img src="img/me.png" alt="me" style="width: 50px;" class="rounded-circle"> Filip
                 Hostinský</p>
             <p class="lead">
                 <a class="btn btn-primary btn-lg" href="#item-0" role="button" style="width: 200px">Start Here</a>
             </p>
         </div>
-    </div>
     </div>
 
     <div class="container containerControl">
@@ -148,7 +151,7 @@
                         dedicated JavaScript engine to execute it.</p>
                 </div>
                 <div class="col-sm">
-                    <p style="padding-left: 20px;">As a multi-paradigm language, JavaScript supports event-driven,
+                    <p>As a multi-paradigm language, JavaScript supports event-driven,
                         functional, and imperative programming styles. It has application programming interfaces (APIs)
                         for working with text, dates, regular expressions, standard data structures, and the Document
                         Object Model (DOM). However, the language itself does not include any input/output (I/O), such
@@ -159,7 +162,7 @@
         </div>
 
 
-        <nav id="navbar-example3" class="navbar navbar-light bg-light active responsiveNav someMargin oFlow">
+        <nav class="navbar navbar-light bg-light active responsiveNav someMargin oFlow">
 
             <nav style="padding-left: 4%;">
                 <h4>Table of content</h4>
@@ -193,12 +196,12 @@
                 onclick='document.getElementById("1-1").innerHTML = disableExecute(this, "Hello World", "1-1-but2")'>Execute
                 program</button>
             <button type="button" class="btn btn-light lightMargin" id="1-1-but2"
-                onclick='document.getElementById("1-1").innerHTML = "&nbsp", disableRestart(this, "1-1-but1")'>Reset
+                onclick='document.getElementById("1-1").innerHTML = "&nbsp;", disableRestart(this, "1-1-but1")'>Reset
                 program</button>
         </div>
 
         <div class="codeStyle">
-            <p id="1-1">&nbsp</p>
+            <p id="1-1">&nbsp;</p>
         </div>
 
 
@@ -285,7 +288,7 @@
             repeatly writing the same code. You have already seen some uses of functions previously. For example:</p>
 
         <div class="codeStyle lightMargin" id="2-3-function">
-            <pre><code>class="js">function multiply(num1,num2) {
+            <pre><code class="js">function multiply(num1,num2) {
     let result = num1 * num2;
     return result;</code></pre>
         </div>
@@ -298,7 +301,7 @@
             <button type="button" class="btn btn-light lightMargin" id="2-3-but1" onclick='MultiplyFunction()'>Execute
                 program</button>
             <button type="button" class="btn btn-light lightMargin" id="2-3-but2"
-                onclick='document.getElementById("2-3-output").innerHTML = "&nbsp", disableRestart(this)'>Reset
+                onclick='document.getElementById("2-3-output").innerHTML = "&nbsp;", disableRestart(this)'>Reset
                 program</button>
         </div>
 
@@ -379,12 +382,12 @@
                 onclick='document.getElementById("3-4").innerHTML = disableExecute(this, "John Doe", "3-4-but2")'>Execute
                 program</button>
             <button type="button" class="btn btn-light lightMargin" id="3-4-but2"
-                onclick='document.getElementById("3-4").innerHTML = "&nbsp", disableRestart(this, "3-4-but1")'>Reset
+                onclick='document.getElementById("3-4").innerHTML = "&nbsp;", disableRestart(this, "3-4-but1")'>Reset
                 program</button>
         </div>
 
         <div class="codeStyle">
-            <p id="3-4">&nbsp</p>
+            <p id="3-4">&nbsp;</p>
         </div>
 
 
@@ -412,47 +415,36 @@
 
 
 
-
-
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-              <li class="page-item disabled">
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
                 <a class="page-link" href="#" tabindex="-1">Previous</a>
-              </li>
-              <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="javascript2.html">2</a></li>
-              <li class="page-item"><a class="page-link" href="javascript3.html">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="javascript2.html">Next</a>
-              </li>
-            </ul>
-          </nav>
+            </li>
+            <li class="page-item disabled"><a class="page-link" href="javascript.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="javascript2.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="javascript3.html">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="javascript3.html">Next</a>
+            </li>
+        </ul>
+    </nav>
 
 
 
+
+<p style="margin-bottom: 40px"></p>
+
+<div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
+    <div class="container containerControl">
+        <p>Sources:</p>
+        <a href="https://hackr.io/blog/best-programming-languages-to-learn-2020-jobs-future">hackr.io</a> <br>
+        <a href="https://www.w3schools.com">W3schools</a><br>
+        <a href="https://en.wikipedia.org/wiki/JavaScript">Wikipedia</a><br>
+        <a href="https://developer.mozilla.org/en-US/">developer.mozzila</a><br>
+        <a href="https://eloquentjavascript.net/index.html">Eloquent Javascript (book)</a><br>
 
     </div>
-    <p style="margin-bottom: 200px"></p>
-
-    <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
-        <div class="container containerControl">
-            <p>Sources:</p>
-            <a href="https://hackr.io/blog/best-programming-languages-to-learn-2020-jobs-future">hackr.io</a> <br>
-            <a href="https://www.w3schools.com">W3schools</a><br>
-            <a href="https://en.wikipedia.org/wiki/JavaScript">Wikipedia</a><br>
-            <a href="https://developer.mozilla.org/en-US/">developer.mozzila</a><br>
-            <a href="https://eloquentjavascript.net/index.html">Eloquent Javascript (book)</a><br>
-
-        </div>
-    </div>
+</div>
 </body>
-
-
-
-
-
-
-
-</body>
-
 </html>

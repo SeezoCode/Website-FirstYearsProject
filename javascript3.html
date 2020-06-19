@@ -1,15 +1,379 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="JavaScript, tutorial, free, interactive">
+    <meta name="description" content="JavaScript web tutorial">
+    <meta name="author" content="Filip Hostinský">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>JavaScript - Best Programming Languages</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+    <script>
+        function disableExecute(obj, str, but) {
+            obj.disabled = true;
+            document.getElementById(but).disabled = false;
+            return str;
+        }
+
+        function disableRestart(obj, but) {
+            obj.disabled = true;
+            document.getElementById(but).disabled = false;
+            return "&nbsp;"
+        }
+
+
+
+        function arrayFunction() {
+            let inputs = document.getElementById("inputGetPersonFunc").value;
+            document.getElementById("1-3-but2").disabled = false;
+
+            let cars = ["Saab", "Volvo", "BMW", "Tesla"];
+
+            console.log(inputs)
+            try {
+                document.getElementById("1-3-output").innerHTML = eval(inputs);
+            } catch (error) {
+                document.getElementById("1-3-output").innerHTML = error;
+            }
+        }
+    </script>
+
 
     <link rel="stylesheet" href="highlight/styles/atom-one-light.css">
     <script src="highlight/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
 </head>
-<body>
-    <pre><code>console.log(12);</code></pre>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="400">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark sticky-top navbar-collapse-sm">
+        <ul class="navbar-nav container">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="python.html">Python<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="javascript.html">JavaScript I<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="javascript2.html">JavaScript II<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link font-weight-bold" href="javascript3.html">JavaScript III<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">More<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <nav id="navbar-example3" class="navbar navbar-light bg-light active responsive oFlowLeftNav sidenav"
+        style="position: fixed;">
+        <nav class="nav nav-pills flex-column active">
+            <a class="nav-link" href="#item-1">The Secret Life of Objects</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-1">Encapsulation</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-2">Methods</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-3">Prototypes</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-4">Classes</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-6">Class notation</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-7">The iterator interface</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-8">The instanceof operator</a>
+            <a class="nav-link" href="#item-2">Summary</a>
+
+        </nav>
+    </nav>
+
+
+
+
+
+
+
+    <div class="jumbotron jumbotron-fluid ">
+        <div class="container containerControl" style="text-align: center;">
+            <h1 class="display-3">JavaScript</h1>
+            <p class="lead" style="font-size: 1.7em;">High-level, often just-in-time compiled, and multi-paradigm
+                programming language.</p>
+            <hr class="my-2">
+            <p style="font-size: large;"><img src="img/me.png" alt="me" style="width: 50px;" class="rounded-circle"> Filip
+                Hostinský</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#item-0" role="button" style="width: 200px">Start Here</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="container containerControl">
+
+
+        <nav class="navbar navbar-light bg-light active responsiveNav someMargin oFlow">
+
+            <nav style="padding-left: 4%;">
+                <h4>Table of content</h4>
+                <a class="nav-link" href="#item-0">JavaScript Arrays</a>
+                <a class="nav-link" href="#item-1">Properties and Methods</a>
+                <a class="nav-link" href="#item-2">How to Recognize an Array</a>
+                <a class="nav-link" href="#item-3">Strict Mode</a>
+            </nav>
+        </nav>
+
+
+        <br class="underHeadlines;">
+        <br class="underHeadlines;">
+
+        <h1 class="display-5" id="item-1">The Secret Life of Objects</h1>
+        <hr class="underHeadlines; someMargin">
+        <h3 id="item-1-1">Encapsulation</h3>
+        <br style="margin-bottom: 20px;">
+        <p>The core idea in object-oriented programming is to divide programs into smaller pieces and make each piece responsible for managing its own state.</p>
+        <p>Such program pieces are modeled using objects. Their interface consists of a specific set of methods and properties. Properties that are part of the interface are called public. The others, which outside code should not be touching, are called private.</p>
+        <p>Many languages provide a way to distinguish public and private properties and prevent outside code from accessing the private ones altogether. JavaScript, taking the minimalist approach, does not—not yet at least. There is work underway to add this to the language.</p>
+        <p class="someMargin">It is also common to put an underscore (<code class="codeStyleLesser">_</code>) character at the start of property names to indicate that those properties are private.</p>
+
+
+
+
+        <h3 id="item-1-2">Methods</h3>
+        <br style="margin-bottom: 20px;">
+        <p>Methods are nothing more than properties that hold function values. This is a simple method:</p>
+
+        <div class="codeStyle certainMargin">
+            <pre><code class="js">let rabbit = {};
+rabbit.speak = function(line) {
+    console.log(`The rabbit says '${line}'`);
+
+rabbit.speak("I'm alive.");
+// → The rabbit says 'I'm alive.
+};</code></pre>
+        </div>
+
+        <p>Usually a method needs to do something with the object it was called on. When a function is called as a method—looked up as a property and immediately called, as in <code class="codeStyleLesser">object.method()</code>—the binding called this in its body automatically points at the object that it was called on.</p>
+        <div class="codeStyle">
+            <pre><code class="js">function speak(line) {
+    console.log(`The ${this.type} rabbit says '${line}'`);
+}
+let whiteRabbit = {type: "white", speak};
+let hungryRabbit = {type: "hungry", speak};
+
+whiteRabbit.speak("Oh my ears and whiskers, " + "how late it's getting!");
+// → The white rabbit says 'Oh my ears and whiskers, how late it's getting!'
+hungryRabbit.speak("I could use a carrot right now.");
+// → The hungry rabbit says 'I could use a carrot right now.</code></pre>
+        </div>
+
+
+
+
+        <h3 id="item-1-3">Prototypes</h3>
+        <br style="margin-bottom: 20px;">
+        <p>A prototype is another object that is used as a fallback source of properties. When an object gets a request for a property that it does not have, its prototype will be searched for the property, then the prototype’s prototype, and so on.</p>
+        <p>So who is the prototype of that empty object? It is the great ancestral prototype, the entity behind almost all objects, <code class="codeStyleLesser">Object.prototype</code>.</p>
+
+        <div class="codeStyle certainMargin">
+            <pre><code class="js">console.log(Object.getPrototypeOf({}) == Object.prototype);
+// → true
+console.log(Object.getPrototypeOf(Object.prototype));
+// → null</code></pre>
+        </div>
+
+        <p>Many objects don’t directly have <code class="codeStyleLesser">Object.prototype</code> as their prototype but instead have another object that provides a different set of default properties. Functions derive from <code class="codeStyleLesser">Function.prototype</code>, and arrays derive from <code class="codeStyleLesser">Array.prototype</code>.</p>
+        <p>You can use <code class="codeStyleLesser">Object.create</code> to create an object with a specific prototype.</p>
+        <div class="codeStyle certainMargin">
+            <pre><code class="js">let obj = Object.create(null)</code></pre>
+        </div>
+        <p class="someMargin">If you pass <code class="codeStyleLesser">null</code> to <code class="codeStyleLesser">Object.create</code>, the resulting object will not derive from <code class="codeStyleLesser">Object.prototype</code></p>
+
+
+
+
+
+        <h3 id="item-1-4">Classes</h3>
+        <br style="margin-bottom: 20px;">
+        <p>Prototypes are useful for defining properties for which all instances of a class share the same value, such as methods. Properties that differ per instance, such as our rabbits’ <code class="codeStyleLesser">type</code> property, need to be stored directly in the objects themselves.</p>
+        <p>So to create an instance of a given class, you have to make an object that derives from the proper prototype, but you also have to make sure it, itself, has the properties that instances of this class are supposed to have. This is what a constructor function does.</p>
+
+        <div class="codeStyle someMargin">
+            <pre><code class="js">function Rabbit(type) {
+    this.type = type;
+}
+Rabbit.prototype.speak = function(line) {
+    console.log(`The ${this.type} rabbit says '${line}'`);
+};
+  
+let weirdRabbit = new Rabbit("weird");</code></pre>
+        </div>
+
+
+
+
+
+
+
+        <h3 id="item-1-6">Class notation</h3>
+        <br style="margin-bottom: 20px;">
+        <p>The class keyword starts a <code class="codeStyleLesser">class</code> declaration, which allows us to define a constructor and a set of methods all in a single place. Any number of methods may be written inside the declaration’s braces. The one named constructor is treated specially. It provides the actual constructor function, which will be bound to the name Rabbit. The others are packaged into that constructor’s prototype. Thus, the earlier class declaration is equivalent to the constructor definition from the previous section. It just looks nicer. </p>
+        <p>Class declarations currently allow only methods—properties that hold functions—to be added to the prototype.</p>
+
+        <div class="codeStyle someMargin">
+            <pre><code class="js">let object = new class { getWord() { return "hello"; } };
+console.log(object.getWord());
+// → hello </code></pre>
+        </div>
+
+   
+
+
+
+        <h3 id="item-1-7">Polymorphism</h3>
+        <br style="margin-bottom: 20px;">
+        <p>When you call the <code class="codeStyleLesser">String</code> function (which converts a value to a string) on an object, it will call the <code class="codeStyleLesser">toString</code> method on that object to try to create a meaningful string from it. Some of the standard prototypes define their own version of <code class="codeStyleLesser">toString</code> so they can create a string that contains more useful information than <code class="codeStyleLesser">[object Object]</code>. You can also do that yourself.</p>
+        <p>Class declarations currently allow only methods—properties that hold functions—to be added to the prototype.</p>
+
+        <div class="codeStyle certainMargin">
+            <pre><code class="js">Rabbit.prototype.toString = function() {
+    return `a ${this.type} rabbit`;
+};
+
+console.log(String(blackRabbit));
+// → a black rabbit</code></pre>
+        </div>
+        <p>This is a simple instance of a powerful idea. When a piece of code is written to work with objects that have a certain interface—in this case, a <code class="codeStyleLesser">toString</code> method—any kind of object that happens to support this interface can be plugged into the code, and it will just work. </p>
+        <p class="someMargin">This technique is called <i>polymorphism</i>. Polymorphic code can work with values of different shapes, as long as they support the interface it expects. </p>
+   
+
+
+
+
+        <h3 id="item-1-8">The iterator interface</h3>
+        <br style="margin-bottom: 20px;">
+        <p>The object given to a for/of loop is expected to be iterable. This means it has a method named with the <code class="codeStyleLesser">Symbol.iterator</code> symbol (a symbol value defined by the language, stored as a property of the Symbol function).</p>
+        <p>When called, that method should return an object that provides a second interface, iterator. This is the actual thing that iterates. It has a next method that returns the next result. That result should be an object with a <code class="codeStyleLesser">value</code> property that provides the <code class="codeStyleLesser">next</code> value, if there is one, and a <code class="codeStyleLesser">done</code> property, which should be true when there are no more results and false otherwise.</p>
+        <p>Note that the next, value, and done property names are plain strings, not symbols. Only <code class="codeStyleLesser">Symbol.iterator</code>, which is likely to be added to a lot of different objects, is an actual symbol.</p>
+        <p>We can directly use this interface ourselves.</p>
+
+        <div class="codeStyle someMargin">
+            <pre><code class="js">let okIterator = "OK"[Symbol.iterator]();
+console.log(okIterator.next());
+// → {value: "O", done: false}
+console.log(okIterator.next());
+// → {value: "K", done: false}
+console.log(okIterator.next());
+// → {value: undefined, done: true} </code></pre>
+        </div>
+
+   
+
+
+
+
+        <h3 id="item-1-8">The iterator interface</h3>
+        <br style="margin-bottom: 20px;">
+        <p>It is occasionally useful to know whether an object was derived from a specific class. For this, JavaScript provides a binary operator called <code class="codeStyleLesser">instanceof</code>.</p>
+
+        <div class="codeStyle someMargin">
+            <pre><code class="js">console.log(
+    new SymmetricMatrix(2) instanceof SymmetricMatrix);
+// → true
+console.log(new SymmetricMatrix(2) instanceof Matrix);
+// → true
+console.log(new Matrix(2, 2) instanceof SymmetricMatrix);
+// → false
+console.log([1] instanceof Array);
+// → true</code></pre>
+        </div>
+        <p>The operator will see through inherited types. The operator can also be applied to standard constructors like Array. Almost every object is an instance of Object.</p>
+
+
+<p class="usualTopMarginForHeadings"></p>        
+<h1 class="display-5" id="item-2">Summary</h1>
+        <hr class="underHeadlines; certainMargin">
+
+        <p>So objects do more than just hold their own properties. They have prototypes, which are other objects. They’ll act as if they have properties they don’t have as long as their prototype has that property. Simple objects have <code class="codeStyleLesser">Object.prototype</code> as their prototype.</p>
+
+        <p>Constructors, which are functions whose names usually start with a capital letter, can be used with the new operator to create new objects. The new object’s prototype will be the object found in the prototype property of the constructor. You can make good use of this by putting the properties that all values of a given type share into their prototype. There’s a class notation that provides a clear way to define a constructor and its prototype.</p>
+            
+        <p>You can define getters and setters to secretly call methods every time an object’s property is accessed. Static methods are methods stored in a class’s constructor, rather than its prototype.</p>
+            
+        <p>The instanceof operator can, given an object and a constructor, tell you whether that object is an instance of that constructor.</p>
+            
+        <p>One useful thing to do with objects is to specify an interface for them and tell everybody that they are supposed to talk to your object only through that interface. The rest of the details that make up your object are now encapsulated, hidden behind the interface.</p>
+
+        <p>More than one type may implement the same interface. Code written to use an interface automatically knows how to work with any number of different objects that provide the interface. This is called polymorphism.</p>
+            
+        <p>When implementing multiple classes that differ in only some details, it can be helpful to write the new classes as subclasses of an existing class, inheriting part of its behavior.</p>
+            
+
+            
+
+
+
+
+
+        <p style="margin-bottom: 160px"></p>
+
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="javascript2.html" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="javascript.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="javascript2.html">2</a></li>
+                <li class="page-item disabled"><a class="page-link" href="javascript3.html">3</a></li>
+                <li class="page-item disabled">
+                    <a class="page-link" href="javascript3.html">Next</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+    </div>
+    <p style="margin-bottom: 40px"></p>
+
+    <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
+        <div class="container containerControl">
+            <p>Sources:</p>
+            <a href="https://hackr.io/blog/best-programming-languages-to-learn-2020-jobs-future">hackr.io</a> <br>
+            <a href="https://www.w3schools.com">W3schools</a><br>
+            <a href="https://en.wikipedia.org/wiki/JavaScript">Wikipedia</a><br>
+            <a href="https://developer.mozilla.org/en-US/">developer.mozzila</a><br>
+            <a href="https://eloquentjavascript.net/index.html">Eloquent Javascript (book)</a><br>
+
+        </div>
+    </div>
 </body>
 </html>
+
