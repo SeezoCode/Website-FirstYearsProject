@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="keywords" content="JavaScript, tutorial, free, interactive">
+    <meta name="description" content="JavaScript web tutorial">
+    <meta name="author" content="Filip Hostinský">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>JavaScript - Best Programming Languages</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+    <script>
+        function disableExecute(obj, str, but) {
+            obj.disabled = true;
+            document.getElementById(but).disabled = false;
+            return str;
+        }
+
+        function disableRestart(obj, but) {
+            obj.disabled = true;
+            document.getElementById(but).disabled = false;
+            return "&nbsp;"
+        }
+
+
+
+        function arrayFunction() {
+            let inputs = document.getElementById("inputGetPersonFunc").value;
+            document.getElementById("1-3-but2").disabled = false;
+
+            let cars = ["Saab", "Volvo", "BMW", "Tesla"];
+
+            console.log(inputs)
+            try {
+                document.getElementById("1-3-output").innerHTML = eval(inputs);
+            } catch (error) {
+                document.getElementById("1-3-output").innerHTML = error;
+            }
+        }
+    </script>
+
+
+    <link rel="stylesheet" href="highlight/styles/atom-one-light.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="400">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark sticky-top navbar-collapse-sm">
+        <ul class="navbar-nav container">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="python.html">Python<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="javascript.html">JavaScript I<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="javascript2.html">JavaScript II<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="javascript3.html">JavaScript III<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link font-weight-bold" href="#">Java<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <nav id="navbar-example3" class="navbar navbar-light bg-light active responsive oFlowLeftNav sidenav"
+        style="position: fixed;">
+        <nav class="nav nav-pills flex-column active">
+            <a class="nav-link" href="#item-1">Java Introduction</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-1">What is Java?</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-1">Why Use Java?</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-3">Java Syntax</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-4">The main Method</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-5">System.out.println()</a>
+
+
+            <a class="nav-link" href="#item-2">Summary</a>
+            <a class="nav-link ml-3 my-1" href="#item-2-1">Java Variables</a>
+            <a class="nav-link ml-3 my-1" href="#item-2-2">Declaring Variables</a>
+            <a class="nav-link ml-3 my-1" href="#item-2-3">Other Types</a>
+
+
+
+            <a class="nav-link" href="#item-3">Java Operators</a>
+            <a class="nav-link ml-3 my-1" href="#item-3-1">Java Operators</a>
+
+
+
+            <a class="nav-link" href="#item-4">Java If ... Else</a>
+            <a class="nav-link ml-3 my-1" href="#item-4-1">Conditions and If Statements</a>
+            <a class="nav-link ml-3 my-1" href="#item-4-2">Ternary Operator</a>
+
+        </nav>
+    </nav>
+
+
+
+
+
+
+
+    <div class="jumbotron jumbotron-fluid ">
+        <div class="container containerControl" style="text-align: center;">
+            <h1 class="display-3">JavaScript</h1>
+            <p class="lead" style="font-size: 1.7em;">High-level, often just-in-time compiled, and multi-paradigm
+                programming language.</p>
+            <hr class="my-2">
+            <p style="font-size: large;"><img src="img/me.png" alt="me" style="width: 50px;" class="rounded-circle"> Filip
+                Hostinský</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#item-1" role="button" style="width: 200px">Start Here</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="container containerControl">
+
+
+        <nav class="navbar navbar-light bg-light active responsiveNav someMargin oFlow">
+
+            <nav style="padding-left: 4%;">
+                <h4>Table of content</h4>
+                <a class="nav-link" href="#item-1">Java Introduction</a>
+                <a class="nav-link" href="#item-2">Java Variables</a>
+                <a class="nav-link" href="#item-2">Java Operators</a>
+                <a class="nav-link" href="#item-2">Java If ... Else</a>
+            </nav>
+        </nav>
+
+
+        <br class="underHeadlines;">
+        <br class="underHeadlines;">
+
+        <h1 class="display-5" id="item-1">Java Introduction</h1>
+        <hr class="underHeadlines; someMargin">
+        <div class="row someMargin">
+            <div class="col-md">
+                <h3 id="item-1-1">What is Java?</h3>
+                <br class="certainMargin">
+                <p>Java is a popular programming language, created in 1995.</p>
+                <p>It is owned by Oracle, and more than 3 billion devices run Java.</p>
+                <p>It is used for:</p>
+                <ul>
+                    <li>Mobile applications (specially Android apps)</li>
+                    <li>Desktop applications</li>
+                    <li>Web applications</li>
+                    <li>Web servers and application servers</li>
+                    <li>Games</li>
+                    <li>Database connection</li>
+                    <li>And much, much more!</li>
+                </ul>  
+        </div>
+
+        <div class="col-md">
+            <h3 id="item-1-2">Why Use Java?</h3>
+            <br class="certainMargin">
+            <p>Java is a popular programming language, created in 1995.</p>
+            <p>It is owned by Oracle, and more than 3 billion devices run Java.</p>
+            <p>It is used for:</p>
+            <ul>
+                <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+                <li>It is one of the most popular programming language in the world</li>
+                <li>It is easy to learn and simple to use</li>
+                <li>It is open-source and free</li>
+                <li>It is secure, fast and powerful</li>
+                <li>It has a huge community support (tens of millions of developers)</li>
+                <li>Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs</li>
+                <li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa</li>
+            </ul>  
+    </div>
+</div>
+
+        <h3 id="item-1-3">Java Syntax</h3>
+        <br class="certainMargin">
+        
+        <div class="codeStyle certainMargin">
+            <pre><code >public class MyClass {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}</code></pre>
+        </div>
+
+        <h4>Example explained</h4>
+        <p class="someMargin">Every line of code that runs in Java must be inside a class. In our example, we named the class MyClass. A class should always start with an uppercase first letter.</p>
+ 
+
+
+
+
+        <h3 id="item-1-4">The main Method</h3>
+        <br style="margin-bottom: 20px;">
+        <p>The main() method is required and you will see it in every Java program:</p>
+        <div class="codeStyle certainMargin">
+            <pre><code >public static void main(String[] args)</code></pre>
+        </div>
+
+        <p>Any code inside the <code class="codeStyleLesser">main()</code> method will be executed. You don't have to understand the keywords before and after <code class="codeStyleLesser">main</code>. You will get to know them bit by bit while reading this tutorial.</p>
+        <p>For now, just remember that every Java program has a <code class="codeStyleLesser">class</code> name which must match the filename, and that every program must contain the <code class="codeStyleLesser">main()</code> method.</p>
+        <div class="codeStyle certainMargin">
+            <pre><code >console.log(Object.getPrototypeOf({}) == Object.prototype);
+// → true
+console.log(Object.getPrototypeOf(Object.prototype));
+// → null</code></pre>
+        </div>
+
+        <p class="someMargin">Many objects don’t directly have <code class="codeStyleLesser">Object.prototype</code> as their prototype but instead have another object that provides a different set of default properties. Functions derive from <code class="codeStyleLesser">Function.prototype</code>, and arrays derive from <code class="codeStyleLesser">Array.prototype</code>.</p>
+        
+
+
+
+
+
+
+        <h3 id="item-1-5">System.out.println()</h3>
+        <br style="margin-bottom: 20px;">
+        <p>Inside the <code class="codeStyleLesser">main()</code> method, we can use the <code class="codeStyleLesser">println()</code> method to print a line of text to the screen:</p>
+        <div class="codeStyle certainMargin">
+            <pre><code >public static void main(String[] args) {
+    System.out.println("Hello World");
+}</code></pre>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1 class="display-5 usualTopMarginForHeadings" id="item-2">Java Variables</h1>
+        <hr class="underHeadlines; someMargin">
+        <h3 id="item-2-1">Java Variables</h3>
+        <br style="margin-bottom: 20px;">
+        <p>In Java, there are different types of variables, for example:</p>
+       <ul class="someMargin">
+           <li><code class="codeStyleLesser">String</code> - stores text, such as "Hello". String values are surrounded by double quotes</li>
+           <li><code class="codeStyleLesser">int</code> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+           <li><code class="codeStyleLesser">float</code> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+           <li><code class="codeStyleLesser">char</code> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+           <li><code class="codeStyleLesser">boolean</code> - stores values with two states: true or false</li>
+       </ul>
+
+
+
+
+       <h3 id="item-2-2">Declaring (Creating) Variables</h3>
+       <br style="margin-bottom: 20px;">
+       <p>To create a variable, you must specify the type and assign it a value:</p>
+       <div class="codeStyle certainMargin">
+        <pre><code >type variable = value;</code></pre>
+    </div>
+    <p>Where type is one of Java's types (such as int or String), and variable is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.</p>
+    <p>To create a variable that should store text, look at the following example:</p>
+
+    <div class="codeStyle certainMargin">
+        <pre><code >String name = "John";
+System.out.println(name);</code></pre></div>
+
+    <p>To create a variable that should store a number, look at the following example:</p>
+<div class="codeStyle someMargin">
+    <pre><code>int myNum = 15;
+System.out.println(myNum);</code></pre></div>
+
+
+
+
+<h3 id="item-2-3">Other Types</h3>
+<br style="margin-bottom: 20px;">
+<p>A demonstration of how to declare variables of other types:</p>
+<div class="codeStyle certainMargin">
+ <pre><code >type variable = value;</code></pre>
+</div>
+<p>Where type is one of Java's types (such as int or String), and variable is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.</p>
+<p>To create a variable that should store text, look at the following example:</p>
+
+<div class="codeStyle certainMargin">
+ <pre><code >int myNum = 5;
+float myFloatNum = 5.99f;
+char myLetter = 'D';
+boolean myBool = true;
+String myText = "Hello";</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="display-5 usualTopMarginForHeadings" id="item-3">Java Operators</h1>
+<hr class="underHeadlines; someMargin">
+<h3 id="item-3-1">Java Operators</h3>
+<br style="margin-bottom: 20px;">
+<p>Operators are used to perform operations on variables and values.</p>
+<p>In the example below, we use the <code class="codeStyleLesser">+</code> operator to add together two values:</p>
+
+<div class="codeStyle certainMargin">
+    <pre><code>int x = 100 + 50;</code></pre></div>
+<p>Java divides the operators into the following groups:</p>
+   
+<ul>
+    <li>Arithmetic operators</li>
+    <li>Assignment operators</li>
+    <li>Comparison operators</li>
+    <li>Logical operators</li>
+    <li>Bitwise operators</li>
+</ul>
+<p>For more informations, please visit <a href="https://www.w3schools.com/java/java_operators.asp">w3schools</a></p>
+
+
+
+
+
+
+
+
+<h1 class="display-5 usualTopMarginForHeadings" id="item-4">Java If ... Else</h1>
+<hr class="underHeadlines; someMargin">
+<h3 id="item-4-1">Java Conditions and If Statements</h3>
+<br style="margin-bottom: 20px;">
+<p>Java supports the usual logical conditions from mathematics:</p>
+
+<ul>
+    <li>Less than: <code class="codeStyleLesser">a < b</code></li>
+    <li>Less than or equal to: <code class="codeStyleLesser">a <= b</code></li>
+    <li>Greater than: <code class="codeStyleLesser">a > b</code></li>
+    <li>Greater than or equal to: <code class="codeStyleLesser">a >= b</code></li>
+    <li>Equal to: <code class="codeStyleLesser">a == b</code></li>
+    <li>Not Equal to: <code class="codeStyleLesser">a != b</code></li>
+</ul>
+<p>You can use these conditions to perform different actions for different decisions.</p>
+
+<p>Java has the following conditional statements:</p>
+<ul class="someMargin">
+    <li>Use <code class="codeStyleLesser">if</code> to specify a block of code to be executed, if a specified condition is true</li>
+    <li>Use <code class="codeStyleLesser">else</code> to specify a block of code to be executed, if the same condition is false</li>
+    <li>Use <code class="codeStyleLesser">else if</code> to specify a new condition to test, if the first condition is false</li>
+    <li>Use <code class="codeStyleLesser">switch</code> to specify many alternative blocks of code to be executed</li>
+</ul>
+
+<h3 id="item-4-2">Short Hand If...Else (Ternary Operator)</h3>
+<br style="margin-bottom: 20px;">
+<p>There is also a short-hand if else, which is known as the <b>ternary operator</b> because it consists of three operands. It can be used to replace multiple lines of code with a single line. It is often used to replace simple if else statements:</p>
+<div class="codeStyle certainMargin">
+ <pre><code>variable = (condition) ? expressionTrue :  expressionFalse;</code></pre>
+</div>
+<p>Instead of writing:</p>
+
+
+<div class="codeStyle certainMargin">
+ <pre><code>int time = 20;
+if (time < 18) {
+    System.out.println("Good day.");
+    } else {
+    System.out.println("Good evening.");
+    }</code></pre></div>
+
+
+
+
+</div>
+<p style="margin-bottom: 200px"></p>
+
+<div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
+    <div class="container containerControl">
+        <p>Sources:</p>
+        <a href="https://hackr.io/blog/best-programming-languages-to-learn-2020-jobs-future">hackr.io</a> <br>
+        <a href="https://www.w3schools.com">W3schools</a><br>
+        <a href="https://en.wikipedia.org/wiki/JavaScript">Wikipedia</a><br>
+        <a href="https://developer.mozilla.org/en-US/">developer.mozzila</a><br>
+        <a href="https://eloquentjavascript.net/index.html">Eloquent Javascript (book)</a><br>
+
+    </div>
+</div>
+</body>
+</html>
