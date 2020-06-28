@@ -18,9 +18,7 @@ img {
 
 /* after top navbar collapses */
 @media (max-width: 1199px) {
-    .navbar{
-        position: relative;
-    }
+
     img{
         padding-left: 10%;
     }
@@ -142,6 +140,9 @@ img {
     margin-bottom: 10px;
 }
 
+.navbar {
+    text-align: center;
+}
 .certainMargin {
     margin-bottom: 20px;
 }
