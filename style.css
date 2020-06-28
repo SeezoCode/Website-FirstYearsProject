@@ -18,7 +18,10 @@ img {
 
 /* after top navbar collapses */
 @media (max-width: 1199px) {
+    .navbar{
+        overflow-x: auto;
 
+    }
     img{
         padding-left: 10%;
     }
