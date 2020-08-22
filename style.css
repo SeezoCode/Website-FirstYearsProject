@@ -85,10 +85,14 @@ img {
         margin-right: auto !important;
 
     }
-
-
 }
 
+
+.navbar {
+    background-color: rgba(15, 15, 15, 0.75) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px);  
+}
 
 .codeStyle{
     background-color: rgb(250, 250, 250);
@@ -172,6 +176,8 @@ img {
 .navbar-dark {
     text-align: center;
 }
+
+
 
 
 
